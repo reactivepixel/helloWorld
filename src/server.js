@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
 
 });
 
-app.listen(3000, () => {
-  console.log('I\'m alive!!');
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log('I\'m alive on port ' + port);
 })
